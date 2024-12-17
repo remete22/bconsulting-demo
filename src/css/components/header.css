@@ -1,0 +1,48 @@
+@layer components {
+  .header {
+    @apply border-b border-white/50 bg-transparent sticky top-0 w-full font-lexend py-8 -mt-px z-20 duration-300;
+
+    &__inner {
+      @apply flex items-center justify-between;
+    }
+    &__end {
+      @apply flex gap-5;
+    }
+    &__contact {
+      @apply text-white flex items-center gap-4;
+
+      &__left {
+        @apply bg-secondary-600 rounded-full p-2.5 relative z-10;
+
+        &::before {
+          content: "";
+
+          @apply absolute -left-0 -top-0 -right-0 -bottom-0 bg-secondary-600 rounded-full duration-300 origin-center -z-10;
+        }
+        &::after {
+          content: "";
+
+          @apply absolute -left-1 -top-1 -right-1 -bottom-1 border border-secondary-500 rounded-full duration-300 origin-center;
+        }
+      }
+      &__right {
+        @apply duration-300;
+      }
+      &:hover {
+        .header__contact {
+          &__left {
+            &::before {
+              @apply -left-1 -top-1 -right-1 -bottom-1;
+            }
+            &::after {
+              @apply border-secondary-600;
+            }
+          }
+          &__right {
+            @apply text-secondary-600;
+          }
+        }
+      }
+    }
+  }
+}

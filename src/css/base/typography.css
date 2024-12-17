@@ -1,0 +1,8 @@
+@layer base {
+  html, body {
+    @apply scroll-smooth text-fontcolor;
+  }
+  a {
+    @apply duration-300;
+  }
+}

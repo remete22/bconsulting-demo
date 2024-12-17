@@ -1,0 +1,8 @@
+@layer components {
+  .hero {
+    background-image: url('/images/hero.png');
+    aspect-ratio: 1440 / 818;
+  
+    @apply bg-cover w-full -mt-28;
+  }
+}
