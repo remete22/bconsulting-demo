@@ -1,0 +1,30 @@
+.services {
+  &__grid {
+    background-image: url("/images/services_bg.png");
+
+    @apply -mt-20 relative rounded-3xl px-6 py-8 grid grid-cols-4 bg-cover;
+
+    &__item {
+      @apply px-6;
+      
+      &__icon {
+        @apply size-16 flex items-center justify-center relative;
+
+        img {
+          @apply relative z-10;
+        }
+        &::before {
+          content: "";
+          background-image: radial-gradient(circle at center, theme("colors.primary.600") 33.5%, theme("colors.primary.800"));
+
+          @apply absolute size-[55px] rounded-full -left-[9px] -top-0.5;
+        }
+        &::after {
+          content: "";
+
+          @apply absolute size-[63px] rounded-full border-2 border-primary-800 -left-[13px] -top-[6px];
+        }
+      }
+    }
+  }
+}
