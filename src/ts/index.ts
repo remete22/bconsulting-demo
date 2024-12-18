@@ -32,8 +32,6 @@ window.addEventListener('scroll', () => {
 const heroSlider = new Splide('.hero__slider', {
   type: 'loop',
   perPage: 1,
-  autoplay: true,
-  interval: 5000,
   pauseOnHover: true,
   arrows: false,
   pagination: true
