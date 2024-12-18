@@ -1,4 +1,6 @@
 import '../css/index.css'
+import '@splidejs/splide/dist/css/splide.min.css'
+import Splide from '@splidejs/splide'
 
 class openToggle {
   constructor(el: HTMLElement) {
@@ -26,3 +28,15 @@ const header = document.querySelector('.header')
 window.addEventListener('scroll', () => {
   window.scrollY > 133 ? header?.classList.add('bg-primary-950/90') : header?.classList.remove('bg-primary-950/90')
 })
+
+const heroSlider = new Splide('.hero__slider', {
+  type: 'loop',
+  perPage: 1,
+  autoplay: true,
+  interval: 5000,
+  pauseOnHover: true,
+  arrows: false,
+  pagination: true
+})
+
+heroSlider.mount()
