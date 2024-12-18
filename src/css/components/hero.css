@@ -11,7 +11,7 @@
         @apply bg-white/10 px-2.5 uppercase text-xl text-white;
       }
       &__title {
-        @apply text-white font-semibold text-[74px] leading-[89px] tracking-wide;
+        @apply text-white font-semibold text-[74px] leading-[89px];
 
         .underscore {
           @apply relative z-10;
