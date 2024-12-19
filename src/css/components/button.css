@@ -1,5 +1,5 @@
 .button {
-  @apply flex items-center gap-3 px-6 py-3 duration-300 cursor-pointer;
+  @apply flex items-center gap-3 px-6 py-3 duration-300 cursor-pointer tracking-[0.2px] font-lexend;
 
   span {
     @apply pl-0 mr-0 duration-300;

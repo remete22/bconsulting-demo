@@ -12,5 +12,6 @@
 @import './components/input.css';
 @import './components/hero.css';
 @import './components/services.css';
+@import './components/complex-services.css';
 
 @import './utilities/variables.css';

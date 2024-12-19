@@ -5,4 +5,7 @@
   a {
     @apply duration-300;
   }
+  .section-title {
+    @apply text-5xl font-semibold font-lexend leading-[1.2];
+  }
 }

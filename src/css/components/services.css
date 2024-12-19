@@ -2,7 +2,7 @@
   &__grid {
     background-image: url("/images/services_bg.png");
 
-    @apply -mt-20 relative rounded-3xl px-6 py-8 grid grid-cols-4 bg-cover;
+    @apply -mt-[79px] relative rounded-3xl px-6 py-8 grid grid-cols-4 bg-cover;
 
     &__item {
       @apply px-6 relative;
@@ -37,7 +37,7 @@
         @apply text-primary-50 font-lexend font-semibold text-2xl mb-3;
       }
       &__content {
-        @apply text-primary-200 text-sm;
+        @apply text-gray-200 text-sm;
       }
       &__link a {
         @apply text-primary-50 text-sm underline hover:text-secondary-600 font-lexend mt-1.5 tracking-wider;
