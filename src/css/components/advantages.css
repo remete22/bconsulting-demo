@@ -1,0 +1,21 @@
+.advantages {
+  &__section {
+    @apply bg-white;
+  }
+  &__grid {
+    background-image: url("/images/advantages_bg.png");
+
+    @apply p-10 bg-cover rounded-10 grid grid-cols-4 gap-8;
+
+    &__item {
+      @apply flex gap-4 text-white font-lexend font-semibold leading-5 tracking-0.2;
+
+      &__image {
+        @apply size-12;
+      }
+      &__number {
+        @apply text-5xl leading-1.2;
+      }
+    }
+  }
+}

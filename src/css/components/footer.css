@@ -22,7 +22,7 @@
   }
   .footer__badge {
     &__top {
-      @apply border border-primary-200 rounded-[10px] text-center flex justify-center w-full text-white font-lexend font-semibold px-4 pt-8 pb-[60px];
+      @apply border border-primary-200 rounded-10 text-center flex justify-center w-full text-white font-lexend font-semibold px-4 pt-8 pb-[60px];
     }
     &__bottom {
       @apply flex justify-center;

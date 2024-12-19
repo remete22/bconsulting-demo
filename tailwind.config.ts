@@ -36,6 +36,15 @@ export default {
         'bg-gray-200': `rgb(var(--bg-gray-200) / <alpha-value>)`,
         fontcolor: `rgb(var(--fontcolor) / <alpha-value>)`,
         'fontcolor-dark': `rgb(var(--fontcolor-dark) / <alpha-value>)`,
+      },
+      borderRadius: {
+        10: '10px'
+      },
+      lineHeight: {
+        '1.2': '1.2'
+      },
+      letterSpacing: {
+        '0.2': '0.2px'
       }
     },
   },
