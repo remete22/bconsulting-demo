@@ -1,8 +1,21 @@
 @layer components {
   .divider__section {
-    aspect-ratio: 1440 / 104;
-    background-image: url("/images/section_divider.png");
+    &__top {
+      aspect-ratio: 1440 / 104;
+      background-image: url("/images/section_divider.png");
+  
+      @apply bg-cover;
+    }
+    &__bottom {
+      background-image: linear-gradient(180deg, white 50%, theme('colors.primary.950') 50%);
 
-    @apply bg-cover;
+      @apply -mb-px relative;
+
+      &__box {
+        background-image: url("/images/divider_box_bg.png");
+
+        @apply p-10 bg-cover rounded-10;
+      }
+    }
   }
 }

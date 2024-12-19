@@ -1,13 +1,6 @@
 .advantages {
-  &__section {
-    background-image: linear-gradient(180deg, white 50%, theme('colors.primary.950') 50%);
-
-    @apply -mb-px relative;
-  }
   &__grid {
-    background-image: url("/images/advantages_bg.png");
-
-    @apply p-10 bg-cover rounded-10 grid grid-cols-4 gap-8 relative;
+    @apply grid grid-cols-4 gap-8 relative;
 
     &__item {
       @apply flex gap-4 text-white font-lexend font-semibold leading-5 tracking-0.2;
