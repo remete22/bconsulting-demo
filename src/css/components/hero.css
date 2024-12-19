@@ -45,7 +45,7 @@
       @apply pb-60 pt-[329px] flex flex-col items-center justify-center gap-5 text-center font-lexend h-full;
 
       &__subtitle {
-        @apply bg-white/10 px-2.5 py-0.5 uppercase text-xl text-white;
+        @apply bg-white/10 text-white;
       }
       &__title {
         @apply text-white font-semibold text-[74px] leading-[89px];

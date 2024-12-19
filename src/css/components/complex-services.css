@@ -34,8 +34,8 @@
         &__content {
           @apply flex flex-col items-start;
   
-          &__name {
-            @apply text-primary-600 px-2.5 py-0.5 uppercase text-xl leading-tight bg-primary-600/10 font-lexend mb-6;
+          &__subtitle {
+            @apply text-primary-600 leading-tight bg-primary-600/10 font-lexend mb-6;
           }
           &__title {
             @apply font-lexend text-4xl leading-[1.3] tracking-wide text-primary-950 mb-5;

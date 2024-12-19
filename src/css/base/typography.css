@@ -8,4 +8,7 @@
   .section-title {
     @apply text-5xl font-semibold font-lexend leading-1.2;
   }
+  .subtitle {
+    @apply px-2.5 py-0.5 uppercase text-xl;
+  }
 }

@@ -1,0 +1,78 @@
+.solutions {
+  &__section {
+    background-image: url("/images/solutions/solutions__bg.jpg");
+
+    @apply py-20 bg-cover;
+  }
+  &__content {
+    max-width: 66%;
+
+    @apply flex flex-col items-start gap-5;
+  }
+  &__subtitle {
+    @apply text-white bg-white/10 tracking-[0.9px];
+  }
+  &__title {
+    @apply text-secondary-600;
+  }
+  &__description {
+    @apply text-primary-50 font-lexend font-light text-2xl leading-9;
+  }
+  &__slider {
+    @apply mt-10 pr-[100px];
+    
+    &__decor {
+      @apply absolute right-[59px] top-[18px];
+    }
+    &__item {
+      @apply rounded-10 rounded-tr-none overflow-hidden;
+
+      &__top {
+        aspect-ratio: 321 / 254;
+
+        @apply relative w-full;
+      }
+      &__image {
+        @apply absolute top-0 left-0 w-full h-full object-cover;
+      }
+      &__partner {
+        @apply absolute z-10 right-0 top-0 w-20 h-10 flex items-center justify-center bg-primary-600 px-4 py-2;
+      }
+      &__icon {
+        @apply absolute top-full left-6 -translate-y-1/2 size-20 bg-secondary-600 z-10 flex items-center justify-center;
+      }
+      &__content {
+        background-image: url("/images/solutions/solutions__item__bg.jpg");
+
+        @apply px-6 pb-8 pt-[60px] flex flex-col gap-3 items-start;
+      }
+      &__title {
+        @apply text-xl leading-[26px] tracking-0.2 font-semibold text-fontcolor-dark font-lexend;
+      }
+      &__text {
+        @apply line-clamp-5 leading-6 tracking-0.2;
+      }
+      &__link {
+        @apply underline font-semibold text-fontcolor-dark hover:text-secondary-600 font-lexend tracking-0.2;
+
+        a {
+          @apply flex items-center gap-3 -mt-0.5;
+        }
+      }
+    }
+    .splide {
+      &__arrows {
+        @apply absolute -top-20 mt-px right-0 flex items-center gap-3;
+      }
+      &__arrow {
+        box-shadow: inset 0 0 0 1px theme('colors.primary.600');
+
+        @apply static size-10 bg-transparent text-primary-600 hover:bg-primary-600 hover:text-white duration-300 translate-y-0;
+
+        svg {
+          @apply fill-current;
+        }
+      }
+    }
+  }
+}
