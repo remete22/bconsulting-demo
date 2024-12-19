@@ -1,0 +1,13 @@
+.request-proposal {
+  @apply flex gap-8 items-center;
+
+  &__left {
+    @apply w-full flex-auto text-primary-200 font-semibold leading-1.2 font-lexend text-[28px];
+  }
+  &__right {
+    @apply w-max flex-none;
+  }
+  &__title {
+    @apply text-white text-4xl mb-5 leading-[1.3];
+  }
+}

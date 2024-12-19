@@ -16,5 +16,7 @@
 @import './components/divider.css';
 @import './components/advantages.css';
 @import './components/solutions.css';
+@import './components/request-proposal.css';
+@import './components/partners.css';
 
 @import './utilities/variables.css';

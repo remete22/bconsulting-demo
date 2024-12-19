@@ -1,0 +1,6 @@
+.partners-divider__section {
+  background-image: url("/images/partners_divider.png");
+  aspect-ratio: 1440 / 102;
+
+  @apply bg-cover;
+}
