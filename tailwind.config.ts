@@ -33,6 +33,7 @@ export default {
         primary: generateColors('primary'),
         secondary: generateColors('secondary'),
         'bg-gray': `rgb(var(--bg-gray) / <alpha-value>)`,
+        'bg-gray-200': `rgb(var(--bg-gray-200) / <alpha-value>)`,
         fontcolor: `rgb(var(--fontcolor) / <alpha-value>)`,
         'fontcolor-dark': `rgb(var(--fontcolor-dark) / <alpha-value>)`,
       }
