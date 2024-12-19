@@ -5,7 +5,7 @@
     @apply relative;
 
     &__link {
-      @apply text-white hover:text-secondary-600 flex items-center gap-2.5 p-2.5 text-sm;
+      @apply text-white hover:text-secondary-600 flex items-center gap-2.5 p-2.5 text-sm leading-6 tracking-wide;
 
       svg {
         @apply duration-300 transition-transform;

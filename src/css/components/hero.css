@@ -63,7 +63,7 @@
         }
       }
       &__content {
-        @apply text-primary-50 text-2xl font-semibold;
+        @apply text-primary-50 text-2xl leading-9 font-semibold;
       }
     }
   }
