@@ -1,47 +1,50 @@
-.services {
-  &__grid {
-    background-image: url("/images/services_bg.png");
-
-    @apply -mt-[79px] relative rounded-3xl px-6 py-8 grid grid-cols-4 bg-cover;
-
-    &__item {
-      @apply px-6 relative;
-      
-      &:not(:last-child)::after {
-        content: "";
-
-        @apply absolute left-full top-1/2 -translate-y-1/2 h-24 w-px bg-primary-200;
-      }
-      &__icon {
-        @apply size-16 flex items-center justify-center relative mb-2;
-
-        img {
-          @apply relative z-10;
-        }
-        &::before {
+@layer components {
+  .services {
+    &__grid {
+      background-image: url("/images/services_bg.png");
+  
+      @apply -mt-[79px] relative rounded-3xl px-6 py-8 grid grid-cols-4 bg-cover;
+  
+      &__item {
+        @apply px-6 relative;
+        
+        &:not(:last-child)::after {
           content: "";
-          background-image: radial-gradient(circle at center, theme("colors.primary.600") 33.5%, theme("colors.primary.800"));
-
-          @apply absolute size-[55px] rounded-full -left-[9px] -top-0.5;
+  
+          @apply absolute left-full top-1/2 -translate-y-1/2 h-24 w-px bg-primary-200;
         }
-        &::after {
-          content: "";
-
-          @apply absolute size-[63px] rounded-full border-2 border-primary-800 -left-[13px] -top-[6px];
+        &__icon {
+          @apply size-16 flex items-center justify-center relative mb-2;
+  
+          img {
+            @apply relative z-10;
+          }
+          &::before {
+            content: "";
+            background-image: radial-gradient(circle at center, theme("colors.primary.600") 33.5%, theme("colors.primary.800"));
+  
+            @apply absolute size-[55px] rounded-full -left-[9px] -top-0.5;
+          }
+          &::after {
+            content: "";
+  
+            @apply absolute size-[63px] rounded-full border-2 border-primary-800 -left-[13px] -top-[6px];
+          }
         }
-      }
-      &__name {
-        @apply uppercase text-primary-300 text-lg font-bold;
-      }
-      &__title {
-        @apply text-primary-50 font-lexend font-semibold text-2xl mb-3;
-      }
-      &__content {
-        @apply text-gray-200 text-sm;
-      }
-      &__link a {
-        @apply text-primary-50 text-sm underline hover:text-secondary-600 font-lexend mt-1.5 tracking-wider;
+        &__name {
+          @apply uppercase text-primary-300 text-lg font-bold;
+        }
+        &__title {
+          @apply text-primary-50 font-lexend font-semibold text-2xl mb-3;
+        }
+        &__content {
+          @apply text-gray-200 text-sm;
+        }
+        &__link a {
+          @apply text-primary-50 text-sm underline hover:text-secondary-600 font-lexend mt-1.5 tracking-wider;
+        }
       }
     }
   }
+  
 }

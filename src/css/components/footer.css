@@ -1,100 +1,102 @@
-.footer {
-  @apply relative z-10;
-}
-.footer__divider {
-  background-image: url("/images/divider.png");
-  height: 98px;
-  background-size: 100% 100%;
-
-  @apply flex justify-center relative -mb-px;
-
-  img {
-    @apply -mt-1 size-16;
+@layer components {
+  .footer {
+    @apply relative z-10;
   }
-}
-.footer__badges {
-  @apply pt-10 pb-20 bg-gradient-to-b from-primary-600 to-primary-950;
-
-  &__columns {
-    @apply grid grid-cols-3 xl:grid-cols-6 gap-8;
-  }
-}
-.footer__badge {
-  &__top {
-    @apply border border-primary-200 rounded-[10px] text-center flex justify-center w-full text-white font-lexend font-semibold px-4 pt-8 pb-[60px];
-  }
-  &__bottom {
-    @apply flex justify-center;
-
+  .footer__divider {
+    background-image: url("/images/divider.png");
+    height: 98px;
+    background-size: 100% 100%;
+  
+    @apply flex justify-center relative -mb-px;
+  
     img {
-      @apply relative -top-12 -mt-px;
+      @apply -mt-1 size-16;
     }
   }
-}
-.footer__bottom {
-  background-image: url("/images/footer_bg.jpg");
-
-  @apply py-20 bg-cover -mt-px relative -z-10;
-}
-.footer__columns {
-  @apply flex text-primary-200 font-lexend pb-10 border-b border-primary-200;
-}
-.footer__column {
-  @apply w-full flex-auto text-sm;
-
-  &__title {
-    @apply uppercase mb-6;
-  }
-  &.is-navigation {
-    @apply px-8 lg:w-40 lg:flex-none;
-  }
-  &.is-services {
-    @apply px-8 lg:w-[328px] lg:flex-none;
-
-    .footer__menu {
-      @apply gap-4;
+  .footer__badges {
+    @apply pt-10 pb-20 bg-gradient-to-b from-primary-600 to-primary-950;
+  
+    &__columns {
+      @apply grid grid-cols-3 xl:grid-cols-6 gap-8;
     }
   }
-}
-.footer__social {
-  @apply flex items-center gap-6;
-
-  &__item {
-    @apply hover:opacity-75;
-  }
-}
-.footer__menu {
-  @apply flex flex-col gap-2;
-
-  &__item {
-    @apply hover:text-white;
-
-    &__wrapper {
-      @apply flex gap-2 items-center;
+  .footer__badge {
+    &__top {
+      @apply border border-primary-200 rounded-[10px] text-center flex justify-center w-full text-white font-lexend font-semibold px-4 pt-8 pb-[60px];
     }
-    &__start {
-      @apply text-secondary-600 font-semibold pr-2 border-r border-primary-200;
+    &__bottom {
+      @apply flex justify-center;
+  
+      img {
+        @apply relative -top-12 -mt-px;
+      }
     }
   }
-}
-.footer__newsletter {
-  &__title {
-    @apply mb-6 font-semibold text-2xl text-primary-50;
+  .footer__bottom {
+    background-image: url("/images/footer_bg.jpg");
+  
+    @apply py-20 bg-cover -mt-px relative -z-10;
   }
-  &__form {
+  .footer__columns {
+    @apply flex text-primary-200 font-lexend pb-10 border-b border-primary-200;
+  }
+  .footer__column {
+    @apply w-full flex-auto text-sm;
+  
+    &__title {
+      @apply uppercase mb-6;
+    }
+    &.is-navigation {
+      @apply px-8 lg:w-40 lg:flex-none;
+    }
+    &.is-services {
+      @apply px-8 lg:w-[328px] lg:flex-none;
+  
+      .footer__menu {
+        @apply gap-4;
+      }
+    }
+  }
+  .footer__social {
+    @apply flex items-center gap-6;
+  
+    &__item {
+      @apply hover:opacity-75;
+    }
+  }
+  .footer__menu {
     @apply flex flex-col gap-2;
+  
+    &__item {
+      @apply hover:text-white;
+  
+      &__wrapper {
+        @apply flex gap-2 items-center;
+      }
+      &__start {
+        @apply text-secondary-600 font-semibold pr-2 border-r border-primary-200;
+      }
+    }
   }
-  &__row {
-    @apply flex gap-2;
+  .footer__newsletter {
+    &__title {
+      @apply mb-6 font-semibold text-2xl text-primary-50;
+    }
+    &__form {
+      @apply flex flex-col gap-2;
+    }
+    &__row {
+      @apply flex gap-2;
+    }
+    &__forward {
+      @apply flex justify-end;
+    }
   }
-  &__forward {
-    @apply flex justify-end;
-  }
-}
-.footer__copyright {
-  @apply w-full flex items-center justify-between text-white text-sm pt-10;
-
-  &__right a {
-    @apply hover:text-secondary-600 hover:underline;
+  .footer__copyright {
+    @apply w-full flex items-center justify-between text-white text-sm pt-10;
+  
+    &__right a {
+      @apply hover:text-secondary-600 hover:underline;
+    }
   }
 }

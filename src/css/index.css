@@ -13,5 +13,6 @@
 @import './components/hero.css';
 @import './components/services.css';
 @import './components/complex-services.css';
+@import './components/divider.css';
 
 @import './utilities/variables.css';

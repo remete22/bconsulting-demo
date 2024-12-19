@@ -1,0 +1,8 @@
+@layer components {
+  .divider__section {
+    aspect-ratio: 1440 / 102;
+    background-image: url("/images/section_divider.png");
+
+    @apply bg-cover;
+  }
+}
