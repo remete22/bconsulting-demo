@@ -4,3 +4,35 @@
 
   @apply bg-cover;
 }
+.partners {
+  &__section {
+    background-image: url("/images/partners/partners_decor.png");
+
+    @apply py-20 bg-no-repeat;
+  }
+  &__top {
+    @apply flex flex-col items-center gap-6;
+  }
+  &__subtitle {
+    @apply text-primary-600 bg-primary-600/10 tracking-[1.2px];
+  }
+  &__title {
+    @apply font-lexend text-fontcolor-dark text-2xl font-light;
+  }
+  &__grid {
+    max-width: 1323px;
+
+    @apply flex flex-wrap justify-center my-10 mx-auto;
+    
+    .partner {
+      @apply w-[calc(100%/9)] h-[93px];
+
+      img {
+        @apply w-full h-full object-scale-down;
+      }
+    }
+  }
+  &__forward {
+    @apply flex justify-center;
+  }
+}

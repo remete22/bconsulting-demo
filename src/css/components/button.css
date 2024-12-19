@@ -12,5 +12,12 @@
     &.is-secondary {
       @apply bg-secondary-600 text-white hover:bg-secondary-700;
     }
+    &.is-gray {
+      @apply text-white bg-fontcolor-dark hover:bg-fontcolor;
+
+      &.is-outlined {
+        @apply border border-fontcolor-dark text-fontcolor-dark bg-transparent hover:text-white hover:bg-fontcolor-dark;
+      }
+    }
   }
 }
