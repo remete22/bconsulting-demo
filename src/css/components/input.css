@@ -1,6 +1,6 @@
 @layer components {
   .text-input {
-    @apply w-full px-3.5 py-2.5 rounded-lg text-fontcolor placeholder:text-bg-gray placeholder:font-normal text-sm outline-secondary-600;
+    @apply w-full px-3.5 py-3.5 rounded-lg text-fontcolor placeholder:text-bg-gray placeholder:font-normal text-sm outline-secondary-600;
   
     &:user-invalid:not(:placeholder-shown) {
       outline: -webkit-focus-ring-color auto 1px;
@@ -24,7 +24,7 @@
       }
     }
     label {
-      @apply text-primary-50;
+      @apply text-primary-50 tracking-wide;
   
       a {
         @apply text-secondary-600 font-extrabold hover:text-secondary-700;

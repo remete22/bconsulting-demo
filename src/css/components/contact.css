@@ -9,7 +9,7 @@
     @apply bg-cover relative;
   }
   &__middle {
-    @apply bg-primary-950 -m-0.5 pb-20;
+    @apply bg-primary-950 -my-0.5 pb-20;
   }
   &__box {
     @apply bg-gradient-to-b from-primary-600 to-primary-950 p-10 rounded-10 -mt-20 font-lexend text-white flex justify-between items-center leading-normal relative z-10;
