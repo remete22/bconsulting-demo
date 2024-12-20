@@ -1,0 +1,63 @@
+.contact {
+  &__section {
+    @apply flex flex-col;
+  }
+  &__top {
+    background-image: url("/images/map.png");
+    aspect-ratio: 1440 / 291;
+
+    @apply bg-cover relative;
+  }
+  &__middle {
+    @apply bg-primary-950 -m-0.5 pb-20;
+  }
+  &__box {
+    @apply bg-gradient-to-b from-primary-600 to-primary-950 p-10 rounded-10 -mt-20 font-lexend text-white flex justify-between items-center leading-normal relative z-10;
+  }
+  &__bottom {
+    background-image: url("/images/contact_bg.png");
+
+    @apply pb-20 pt-1 bg-cover;
+  }
+  &__title {
+    @apply text-secondary-600 mt-10 mb-5 tracking-0.2;
+  }
+  &__form {
+    @apply px-24 -mt-1 text-primary-50 text-2xl font-light leading-normal;
+
+    &__grid {
+      @apply grid grid-cols-2 gap-y-[19px] gap-x-8 pt-10 -mt-px;
+
+      &__item {
+        @apply flex flex-col;
+
+        &.is-double {
+          @apply flex-row gap-5;
+        }
+      }
+      label {
+        @apply text-primary-50 block mb-2.5 text-lg leading-normal tracking-0.2;
+      }
+      .checkbox__row label {
+        @apply mb-0 text-sm;
+
+        a {
+          @apply underline;
+        }
+      }
+      .text-input {
+        @apply px-4 py-[18px];
+      }
+      textarea.text-input {
+        @apply h-full;
+      }
+    }
+    &__submit {
+      @apply flex justify-end mt-6 font-semibold;
+
+      .button {
+        @apply text-base;
+      }
+    }
+  }
+}

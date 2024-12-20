@@ -6,9 +6,17 @@
 }
 .partners {
   &__section {
-    background-image: url("/images/partners/partners_decor.png");
+    @apply py-20 bg-white relative z-10;
+  }
+  &__decor {
+    @apply absolute -z-10;
 
-    @apply py-20 bg-no-repeat;
+    &:nth-child(1) {
+      @apply top-0 left-0;
+    }
+    &:nth-child(2) {
+      @apply bottom-0 right-0;
+    }
   }
   &__top {
     @apply flex flex-col items-center gap-6;
@@ -22,7 +30,7 @@
   &__grid {
     max-width: 1323px;
 
-    @apply flex flex-wrap justify-center my-10 mx-auto;
+    @apply flex flex-wrap justify-center mt-10 mb-11 mx-auto;
     
     .partner {
       @apply w-[calc(100%/9)] h-[93px];
@@ -34,5 +42,9 @@
   }
   &__forward {
     @apply flex justify-center;
+
+    .button {
+      @apply py-3 leading-5 font-semibold;
+    }
   }
 }

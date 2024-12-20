@@ -1,0 +1,101 @@
+.appearances {
+  &__section {
+    @apply py-20;
+  }
+  &__subtitle {
+    @apply w-max bg-primary-600/10 text-primary-600 font-lexend;
+  }
+  &__top {
+    @apply mt-6 mb-8 flex items-center justify-between;
+
+    .button {
+      @apply font-semibold;
+    }
+  }
+  &__title {
+    @apply text-fontcolor-dark tracking-0.2 leading-normal -mt-1;
+  }
+  &__grid {
+    @apply flex gap-8 justify-start;
+
+    &__left {
+      @apply w-[533px] flex-none;
+    }
+    &__right {
+      @apply w-[619px] flex-none flex flex-col gap-8;
+    }
+  }
+  &__item {
+    box-shadow: 0px 1px 2px rgba(53, 65, 115, 0.2), 8px 8px 13px 2px rgba(36, 42, 71, 0.1);
+
+    @apply p-6 rounded-10 flex gap-8 bg-white;
+
+    &__image {
+      @apply size-[205px] rounded-10 overflow-hidden relative flex-none;
+
+      &::before {
+        content: "";
+        background: linear-gradient(180deg, rgba(36, 42, 71, 0) 33.5%, rgba(36, 42, 71, 0.9025) 85.66%);
+
+        @apply absolute bottom-0 left-0 top-0 right-0 rounded-10;
+      }
+      img {
+        @apply w-full h-full object-cover;
+      }
+    }
+    &__date {
+      @apply bg-secondary-600 text-white absolute left-3 bottom-3 text-center size-20 flex flex-col items-center justify-center;
+
+      &__number {
+        @apply font-medium text-[28px] leading-normal;
+      }
+    }
+    &__content {
+      @apply flex flex-col gap-2;
+    }
+    &__badges {
+      @apply flex gap-9;
+    }
+    &__badge {
+      @apply flex items-center gap-3 font-lexend font-semibold text-sm tracking-wide;
+    }
+    &__title {
+      @apply font-lexend font-semibold text-[28px] leading-normal text-fontcolor-dark;
+    }
+    &__text {
+      @apply tracking-0.2 text-fontcolor-dark;
+    }
+    &__bottom {
+      @apply flex items-center justify-between mt-1;
+    }
+    &__person {
+      @apply flex gap-5 items-center;
+
+      &__image {
+        @apply size-[60px] rounded-full overflow-hidden flex-none;
+
+        img {
+          @apply size-full object-cover;
+        }
+      }
+      &__name {
+        @apply text-primary-600 font-semibold tracking-0.2 font-lexend;
+      }
+      &__position {
+        @apply text-sm leading-5;
+      }
+    }
+    &.is-big {
+      @apply flex-col;
+
+      .appearances__item {
+        &__image {
+          @apply w-full h-[250px];
+        }
+        &__bottom {
+          @apply mt-6;
+        }
+      }
+    }
+  }
+}
